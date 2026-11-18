@@ -18,6 +18,19 @@
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required><br><br>
 
+        <label for="gender">Gender:
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required><br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required><br>
+            </label>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="pass" id="password" name="password" required><br><br>
+
             <label for="check-in">Check-in Date:</label>
             <input type="date" id="check-in" name="check-in" required><br><br>
 
@@ -26,13 +39,17 @@
 
             <label for="room-type">Room Type:</label>
             <select id="room-type" name="room-type" required>
-                <option value="single">Single</option>
-                <option value="double">Double</option>
+                <option value="single">Single Room</option>
+
+                <option value="double">Double Room</option>
+
+                <option value="deluxe">Deluxe</option>
+
                 <option value="suite">Suite</option>
             </select><br><br>
 
             <label for="guests">Number of Guests:</label>
-            <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <input type="number" id="guests" name="guests" min="1" required max="10"><br><br>
 
             <label for="special-requests">Special Requests:</label>
             <textarea id="special-requests" name="special-requests"></textarea><br><br>
@@ -40,6 +57,6 @@
             <input type="submit" value="Book Now">
             <input type="reset" value="Reset">
         </form>
-         <p align="center"> &copy; Copyright by <a href="https://github.com/Student-NS/WD_0575" target="_blank">Student-NS</a></p>
+         <p align="center"> &copy; Copyright by <a href="https://github.com/Student-NS/WDW_0575" target="_blank">Student-NS</a></p>
     </body>
 </html>
